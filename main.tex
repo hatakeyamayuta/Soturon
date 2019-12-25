@@ -1,0 +1,114 @@
+\documentclass[12pt]{jsbook}
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{subfigure}
+\usepackage{minitoc}
+\usepackage{hhline}
+\usepackage{diagbox}
+\usepackage{booktabs}
+\usepackage{comment}
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{color}
+\usepackage{latexsym}
+\usepackage{ascmac}
+\usepackage{subfig}
+\usepackage[labelsep=quad]{caption}
+\usepackage{./sty/bthesis}
+\usepackage{./sty/xbmkanji}
+\usepackage{./sty/cite}
+\usepackage{./sty/algorithm}
+\usepackage{./sty/algorithmic}
+
+\renewcommand\UrlFont{\rmfamily}
+\renewcommand{\refname}{}
+
+\newcommand\whline{%
+     \noalign{\xdef\origarrayrulewidth{\the\arrayrulewidth}%
+     \global\arrayrulewidth 3\arrayrulewidth}%
+     \hline%
+     \noalign{\global\arrayrulewidth\origarrayrulewidth}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newif\iffigure
+%\igurefalse
+\figuretrue
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setlength{\subfigtopskip}{-10pt}
+%\setlength{\subfigcapskip}{-10pt}
+%\setlength{\subfigbottomskip}{-10pt}
+%\setlength{\abovecaptionskip}{-10pt}
+%\setlength{\belowcaptionskip}{-10pt}
+
+%
+% 論文の表紙の項目
+%
+\thesistype{令和元年度 卒業論文}
+\title{土砂積み込み作業のための\\複数視点から計測した点群データの\\[1ex]位置合わせによる広範囲土砂量推定}
+\etitle{Dump Truck Position and Posture Estimation \\by Image Recognition and Point Cloud Registration\\ for Automatic Loading}
+\affiliation{千葉工業大学 先進工学部 未来ロボティクス学科}
+\supervisor{藤井 浩光\ \ 准教授}
+\studentid{16C1101}
+\author{畠山　佑太}
+\begin{document}
+\dominitoc
+%表紙
+\maketitle
+%概要
+\thispagestyle{empty}
+\thispagestyle{empty}
+\input{./Frontmatter/abst}
+
+\frontmatter
+%目次
+\tableofcontents
+%図目次
+\listoffigures
+%表目次
+\listoftables
+
+%
+%以下本文
+\mainmatter
+%========================================
+% コンパイルはどんどん重くなっていくので
+% 執筆を進める上では必要な部分だけを
+% コメントアウトしてコンパイルすると良い
+%========================================
+\input{./chap1/chap1}
+%\input{./chap2/chap2}
+%\input{./chap3/chap3}
+%\input{./chap4/chap4}
+%\input{./chap5/chap5}
+%\input{./chap6/chap6}
+%\input{./chap7/chap7}
+\cleardoublepage
+%
+%謝辞
+\addcontentsline{toc}{chapter}{謝辞}
+\input{./Backmatter/Thank}
+\cleardoublepage
+%	
+%参考文献
+\addcontentsline{toc}{chapter}{参考文献}
+\input{./Backmatter/ref}
+\cleardoublepage
+%
+%研究業績
+\addcontentsline{toc}{chapter}{研究業績}
+\input{./Backmatter/Achieve}
+\cleardoublepage
+%
+%
+%付録
+%\appendix
+%\input{./Appendix/appendix_A}
+%\input{./Appendix/appendix_B}
+%\input{./Appendix/appendix_C}
+%\cleardoublepage
+%
+% 論文の最後
+%
+\end{document}
