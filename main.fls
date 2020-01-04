@@ -505,6 +505,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT ./chap1/fig/GNSS.png
 INPUT extractbb -B cropbox -O ./chap1/fig/GNSS.png
+INPUT ./chap1/fig/struct.jpg
+INPUT extractbb -B cropbox -O ./chap1/fig/struct.jpg
 INPUT ./Backmatter/Thank.tex
 INPUT ./Backmatter/Thank.tex
 INPUT ./Backmatter/ref.tex
