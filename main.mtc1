@@ -1,4 +1,8 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.1}背景}{\reset@font\mtcSfont 2}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.2}従来研究}{\reset@font\mtcSfont 3}}
+<<<<<<< HEAD
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}研究の目的}{\reset@font\mtcSfont 4}}
+=======
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.3}研究の目的}{\reset@font\mtcSfont 3}}
+>>>>>>> ca123b8bd16c7e58b1694047188a9bdca58692ef
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {1.4}本論文の構成}{\reset@font\mtcSfont 5}}
