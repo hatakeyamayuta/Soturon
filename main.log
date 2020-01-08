@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  5 JAN 2020 13:23
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  8 JAN 2020 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -198,13 +198,13 @@ Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
  (/usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
 File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
 )
-Package pict2e Info: Driver file: dvips.def on input line 119.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+Package pict2e Info: Driver file: dvipdfmx.def on input line 119.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 )
-Package pict2e Info: Driver file for pict2e: p2e-dvips.def on input line 121.
- (/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-dvips.def
-File: p2e-dvips.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+Package pict2e Info: Driver file for pict2e: p2e-dvipdfmx.def on input line 121.
+ (/usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-dvipdfmx.def
+File: p2e-dvipdfmx.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
@@ -316,7 +316,7 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: dvips.def on input line 147.
+Package color Info: Driver file: dvipdfmx.def on input line 147.
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
@@ -417,9 +417,7 @@ Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 99.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
-))
+)
 \Gin@req@height=\dimen179
 \Gin@req@width=\dimen180
 )) (./sty/xbmkanji.sty
@@ -474,24 +472,24 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
  (I search kanjifont definition file: . . ) (I search font definition file: . . . . . . . )
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 55.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 54.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -515,7 +513,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM main.toc on input line 58.
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 57.
 Package minitoc Info: I0033
 (minitoc)             Writing main.mtc1.
 \openout3 = `main.mtc1'.
@@ -536,54 +534,46 @@ Package minitoc Info: I0033
 (minitoc)             Writing main.mtc5.
 \openout3 = `main.mtc5'.
 
-Package minitoc Info: I0033
-(minitoc)             Writing main.mtc6.
-\openout3 = `main.mtc6'.
-
-Package minitoc Info: I0033
-(minitoc)             Writing main.mtc7.
-\openout3 = `main.mtc7'.
-
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 58.
+(Font)              scaled to size 11.53198pt on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 58.
+(Font)              scaled to size 11.53198pt on input line 57.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 58.
+(Font)              scaled to size 11.53198pt on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 58.
+(Font)              scaled to size 11.53198pt on input line 57.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 58.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
 File: citlogo.png Graphic file (type bmp)
 <citlogo.png>
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 58.
+(Font)              scaled to size 9.60999pt on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 58.
+(Font)              scaled to size 9.60999pt on input line 57.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 58.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 58.
+(Font)              scaled to size 16.60605pt on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <17.28> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 58.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 58.
+(Font)              scaled to size 16.60605pt on input line 57.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 58.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 58.
+(Font)              scaled to size 13.83836pt on input line 57.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 58.
+(Font)              scaled to size 13.83836pt on input line 57.
 [1
 
 ] [2
@@ -624,19 +614,19 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Try loading font information for U+lasy on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1
-
-])
+))
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2] (./main.lof)
+ [1
+
+] [2
+
+] (./main.lof)
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [3
-
-] [4
+ [3] [4
 
 ] (./main.lot)
 \tf@lot=\write8
@@ -686,8 +676,8 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
-File: ./chap1/fig/GNSS.png Graphic file (type bmp)
-<./chap1/fig/GNSS.png>
+File: ./chap1/fig/gnss.eps Graphic file (type eps)
+<./chap1/fig/gnss.eps>
  [2] [3] [4]
 File: ./chap1/fig/struct.jpg Graphic file (type bmp)
 <./chap1/fig/struct.jpg>
@@ -699,23 +689,7 @@ File: ./chap1/fig/struct.jpg Graphic file (type bmp)
 
 \openout3 = `main.mtc'.
 
-(./main.mtc2) [7]) (./chap3/chap3.tex [8]
-第3章
-\openout3 = `main.mtc'.
-
-\openout3 = `main.mtc'.
-
-(./main.mtc3) [9
-
-]) (./chap4/chap4.tex [10]
-第4章
-\openout3 = `main.mtc'.
-
-\openout3 = `main.mtc'.
-
-(./main.mtc4) [11
-
-]) [12] (./Backmatter/Thank.tex [13
+(./main.mtc2) [7] [8] [9] [10] [11]) [12] (./Backmatter/Thank.tex [13
 
 
 ] [14]) (./Backmatter/ref.tex [15
@@ -751,12 +725,12 @@ Package minitoc(hints) Warning: W0024
 
 [25] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7413 strings out of 493640
- 98160 string characters out of 6150527
- 204610 words of memory out of 5000000
- 10555 multiletter control sequences out of 15000+600000
+ 7384 strings out of 493640
+ 97782 string characters out of 6150527
+ 203207 words of memory out of 5000000
+ 10546 multiletter control sequences out of 15000+600000
  48417 words of font info for 123 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  44i,9n,45p,413b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (35 pages, 69240 bytes).
+Output written on main.dvi (35 pages, 50316 bytes).

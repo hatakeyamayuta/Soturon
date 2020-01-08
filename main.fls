@@ -278,10 +278,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/pict2e.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-dvips.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-dvips.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-dvipdfmx.def
+INPUT /usr/share/texlive/texmf-dist/tex/latex/pict2e/p2e-dvipdfmx.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
@@ -359,8 +359,6 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT ./sty/xbmkanji.sty
 INPUT ./sty/xbmkanji.sty
 INPUT ./sty/cite.sty
@@ -390,8 +388,6 @@ OUTPUT main.mtc2
 OUTPUT main.mtc3
 OUTPUT main.mtc4
 OUTPUT main.mtc5
-OUTPUT main.mtc6
-OUTPUT main.mtc7
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
@@ -506,8 +502,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT ./chap1/fig/GNSS.png
-INPUT extractbb -B cropbox -O ./chap1/fig/GNSS.png
+INPUT ./chap1/fig/gnss.eps
+INPUT ./chap1/fig/gnss.eps
 INPUT ./chap1/fig/struct.jpg
 INPUT extractbb -B cropbox -O ./chap1/fig/struct.jpg
 INPUT ./chap2/chap2.tex
@@ -521,26 +517,6 @@ OUTPUT main.mtc
 INPUT main.mtc2
 INPUT main.mtc2
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
-INPUT ./chap3/chap3.tex
-INPUT ./chap3/chap3.tex
-INPUT main.mtc3
-INPUT main.mtc3
-OUTPUT main.mtc
-INPUT main.mtc
-INPUT main.mtc
-OUTPUT main.mtc
-INPUT main.mtc3
-INPUT main.mtc3
-INPUT ./chap4/chap4.tex
-INPUT ./chap4/chap4.tex
-INPUT main.mtc4
-INPUT main.mtc4
-OUTPUT main.mtc
-INPUT main.mtc
-INPUT main.mtc
-OUTPUT main.mtc
-INPUT main.mtc4
-INPUT main.mtc4
 INPUT ./Backmatter/Thank.tex
 INPUT ./Backmatter/Thank.tex
 INPUT ./Backmatter/ref.tex
@@ -550,8 +526,6 @@ INPUT ./Backmatter/Achieve.tex
 OUTPUT main.maf
 INPUT main.mtc
 INPUT main.mtc0
-INPUT main.mtc4
-INPUT main.mtc3
 INPUT main.mtc2
 INPUT main.mtc1
 INPUT main.aux
