@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  8 JAN 2020 14:15
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  8 JAN 2020 17:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -676,11 +676,16 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 12.
+File: ./chap1/fig/dosha.eps Graphic file (type eps)
+<./chap1/fig/dosha.eps>
 File: ./chap1/fig/gnss.eps Graphic file (type eps)
 <./chap1/fig/gnss.eps>
- [2] [3] [4]
-File: ./chap1/fig/struct.jpg Graphic file (type bmp)
-<./chap1/fig/struct.jpg>
+ [2]
+File: ./chap1/fig/lidar.eps Graphic file (type eps)
+<./chap1/fig/lidar.eps>
+ [3] [4]
+File: ./chap1/fig/struct.eps Graphic file (type eps)
+<./chap1/fig/struct.eps>
 ) (./chap2/chap2.tex [5] [6
 
 ]
@@ -725,12 +730,12 @@ Package minitoc(hints) Warning: W0024
 
 [25] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7384 strings out of 493640
- 97782 string characters out of 6150527
+ 7390 strings out of 493640
+ 97889 string characters out of 6150527
  203207 words of memory out of 5000000
- 10546 multiletter control sequences out of 15000+600000
+ 10552 multiletter control sequences out of 15000+600000
  48417 words of font info for 123 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  44i,9n,45p,413b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (35 pages, 50316 bytes).
+Output written on main.dvi (35 pages, 52416 bytes).

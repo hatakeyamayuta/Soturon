@@ -18,18 +18,26 @@
 の 2025 年は 286 万人と減少すると試算されている．今後，深刻な人材不足の危機に陥ると予想されており，人材不
 足を補う為，建設現場における作業の自動化は重要な課題である．
 \par
-現場における作業で自動化の要求の高い作業の一つが，バックホウとダンプトラックの連携による土砂積み込み作業の自動化である．
+現場における作業で自動化の要求の高い作業の一つが，図\ref{fig:dosha}に示すように，バックホウとダンプトラックの連携による土砂積み込み作業の自動化である．
 土砂の積み込みの際には，ダンプトラックは運転手により積み込み可能な位置まで移動されるが，バックホウによる積み込み作業を自動化するために
 は，バックホウに対するダンプトラックの相対的な位置姿勢を正しく獲得する必要がある．
-一般の作業現場では，GNSSやTotal Stationによって位置姿勢の把握\cite{土井下2010}が行われているが，GNSS等の衛星測位システムで高精度な位置姿勢を獲得するためには，通信基地局などの環境整備が必要であり，設備コストが大きいことが課題である．
+一般の作業現場では，図\ref{fig:GNSS}に示すように，GNSSやTotal Stationによって位置姿勢の把握\cite{土井下2010}が行われているが，GNSS等の衛星測位システムで高精度な位置姿勢を獲得するためには，通信基地局などの環境整備が必要であり，設備コストが大きいことが課題である．
 Tostal Stationは建機に搭載されたプリズムにレーザーを照射することで高精度な位置情報を獲得できるが，一旦，レーザー照射が途切れるとプリズムを
 追従できない問題がある．
 そのため，環境に大がかりな設備を要さずに位置姿勢を計測する手法が期待されている．
 %%%%%
-
+\begin{figure}[b]
+    \begin{center}
+    \includegraphics[width=0.5\columnwidth]{./chap1/fig/dosha.eps}
+    \caption{土砂積み込み作業の様子}
+    \label{fig:dosha}
+    \end{center}
+    %\vspace{-5mm}
+\end{figure}
+ 
 \begin{figure}[b]
  \begin{center}
- \includegraphics[width=1.0\columnwidth]{./chap1/fig/gnss.eps}
+ \includegraphics[width=0.5\columnwidth]{./chap1/fig/gnss.eps}
  \caption{GNSSやTSによる位置情報の把握}
  \label{fig:GNSS}
  \end{center}
@@ -51,9 +59,17 @@ CADモデルを用いた手法の代表例として距離センサを用いた�
 しかし，実際の作業現場では様々なメーカーのダンプトラックが行き交い,また荷台部も現場によって異なるため,事前にCADデータを用意するのは難しい．
 
 また，車両を対象としたモデルレスの位置姿勢推定の手法としてLIDARを用いた3次元物体検出がある．\cite{Zhang2017}\cite{Chen2017}\cite{Lang2019}\\
-図のように広域にレーザーを照射することにより計測した3次元点群から対象物体の点群を検出することで位置姿勢推定を行う．
-しかし，土砂積み込み作業は高低差がある環境が多く，LIDARは視野角が狭いため近距離が死角になる．また，LIDARを傾けることで死角を
+図\ref{fig:Lidar}のように広域にレーザーを照射することにより計測した3次元点群から対象物体の点群を検出することで位置姿勢推定を行う．
+しかし，土砂積み込み作業は効率的に作業を行うために高低差をつけて作業する場合が多く，LIDARは視野角が狭いため近距離が死角になる．また，LIDARを傾けることで死角を
 軽減可能だが，レーザーの密度が低いため距離によっては対象物体にレーザー当たらず計測ができない状況が生じる．
+\begin{figure}[b]
+    \begin{center}
+    \includegraphics[width=0.5\columnwidth]{./chap1/fig/lidar.eps}
+    \caption{Lidarによる計測データ}
+    \label{fig:Lidar}
+    \end{center}
+\end{figure}
+
 
 \newpage
 \section{研究の目的}
@@ -77,14 +93,14 @@ CADモデルを用いた手法の代表例として距離センサを用いた�
 を目的とする
 \newpage
 \section{本論文の構成}
-本論文は全4章から構成されている．図に本論文の構成を示す．\par
+本論文は全4章から構成されている．図\ref{fig:GNSS}に本論文の構成を示す．\par
 第1章では，本研究の背景，従来研究，目的について述べた．\par
 第2章では，画像認識と点群位置合わせによるダンプトラックの位置姿勢推定の提案手法について述べる.\par
 第3章では，本提案手法の有効性を検証するために行った実験について述べる．\par
 第4章では，結論と今後の展望を述べる．
 \begin{figure}[b]
     \begin{center}
-    \includegraphics[width=0.3 \columnwidth]{./chap1/fig/struct.jpg}
+    \includegraphics[width=1.0 \columnwidth]{./chap1/fig/struct.eps}
     \caption{本論文の構成}
     \label{fig:flow}
     \end{center}

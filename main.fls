@@ -502,10 +502,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb8t.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8t.tfm
+INPUT ./chap1/fig/dosha.eps
+INPUT ./chap1/fig/dosha.eps
 INPUT ./chap1/fig/gnss.eps
 INPUT ./chap1/fig/gnss.eps
-INPUT ./chap1/fig/struct.jpg
-INPUT extractbb -B cropbox -O ./chap1/fig/struct.jpg
+INPUT ./chap1/fig/lidar.eps
+INPUT ./chap1/fig/lidar.eps
+INPUT ./chap1/fig/struct.eps
+INPUT ./chap1/fig/struct.eps
 INPUT ./chap2/chap2.tex
 INPUT ./chap2/chap2.tex
 INPUT main.mtc2
