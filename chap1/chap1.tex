@@ -17,6 +17,7 @@
 る.また，国土交通省の「建築産業の現状と課題」\cite{建設経済研究所2017}によると，2015 年の技能労働者数は330 万人であり，10 年後
 の 2025 年は 286 万人と減少すると試算されている．今後，深刻な人材不足の危機に陥ると予想されており，人材不
 足を補う為，建設現場における作業の自動化は重要な課題である．
+\newpage
 \par
 現場における作業で自動化の要求の高い作業の一つが，図\ref{fig:dosha}に示すように，バックホウとダンプトラックの連携による土砂積み込み作業の自動化である．
 土砂の積み込みの際には，ダンプトラックは運転手により積み込み可能な位置まで移動されるが，バックホウによる積み込み作業を自動化するために
@@ -28,7 +29,7 @@ Tostal Stationは建機に搭載されたプリズムにレーザーを照射す
 %%%%%
 \begin{figure}[b]
     \begin{center}
-    \includegraphics[width=0.5\columnwidth]{./chap1/fig/dosha.eps}
+    \includegraphics[width=0.8\columnwidth]{./chap1/fig/dosha.eps}
     \caption{土砂積み込み作業の様子}
     \label{fig:dosha}
     \end{center}
@@ -37,7 +38,7 @@ Tostal Stationは建機に搭載されたプリズムにレーザーを照射す
  
 \begin{figure}[b]
  \begin{center}
- \includegraphics[width=0.5\columnwidth]{./chap1/fig/gnss.eps}
+ \includegraphics[width=0.8\columnwidth]{./chap1/fig/gnss.eps}
  \caption{GNSSやTSによる位置情報の把握}
  \label{fig:GNSS}
  \end{center}
@@ -58,13 +59,15 @@ CADモデルを用いた手法の代表例として距離センサを用いた�
 3次元のシミュレーター環境で作成した教室データを学習することで推定する手法\cite{Tremblay2018}などが研究されている．
 しかし，実際の作業現場では様々なメーカーのダンプトラックが行き交い,また荷台部も現場によって異なるため,事前にCADデータを用意するのは難しい．
 
-また，車両を対象としたモデルレスの位置姿勢推定の手法としてLIDARを用いた3次元物体検出がある．\cite{Zhang2017}\cite{Chen2017}\cite{Lang2019}\\
+\newpage
+
+一方，車両を対象としたモデルレスの位置姿勢推定の手法としてLIDARを用いた3次元物体検出がある．\cite{Zhang2017}\cite{Chen2017}\cite{Lang2019}\\
 図\ref{fig:Lidar}のように広域にレーザーを照射することにより計測した3次元点群から対象物体の点群を検出することで位置姿勢推定を行う．
 しかし，土砂積み込み作業は効率的に作業を行うために高低差をつけて作業する場合が多く，LIDARは視野角が狭いため近距離が死角になる．また，LIDARを傾けることで死角を
 軽減可能だが，レーザーの密度が低いため距離によっては対象物体にレーザー当たらず計測ができない状況が生じる．
 \begin{figure}[b]
     \begin{center}
-    \includegraphics[width=0.5\columnwidth]{./chap1/fig/lidar.eps}
+    \includegraphics[width=0.8\columnwidth]{./chap1/fig/lidar.eps}
     \caption{Lidarによる計測データ}
     \label{fig:Lidar}
     \end{center}
@@ -87,7 +90,7 @@ CADモデルを用いた手法の代表例として距離センサを用いた�
 そこで，本研究では
     \begin{screen}
         \begin{center}
-            画像による3次元物体検出を用いた\\点群位置合わせによる位置姿勢推定の手法を提案
+            画像による3次元物体検出と\\点群位置合わせによる位置姿勢推定の手法を提案
         \end{center}
     \end{screen}
 を目的とする
