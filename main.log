@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  14 JAN 2020 19:10
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  15 JAN 2020 02:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,25 +695,30 @@ File: ./chap1/fig/struct.eps Graphic file (type eps)
 
 \openout3 = `main.mtc'.
 
-(./main.mtc2) [9] [10] [11] [12]
+(./main.mtc2) [9] [10] [11] [12] [13]
 File: ./chap2/fig/3DBox.eps Graphic file (type eps)
 <./chap2/fig/3DBox.eps>
 File: ./chap2/fig/ray.eps Graphic file (type eps)
 <./chap2/fig/ray.eps>
- [13]
+File: ./chap2/fig/kitti.eps Graphic file (type eps)
+<./chap2/fig/kitti.eps>
+ [14] [15]
 File: ./chap2/fig/training.eps Graphic file (type eps)
 <./chap2/fig/training.eps>
- [14] [15] [16] [17] [18]) (./Backmatter/Thank.tex [19
+ [16
 
 
-] [20]) (./Backmatter/ref.tex [21
+] [17] [18] [19] [20]) (./Backmatter/Thank.tex [21
 
 
-] [22] [23] [24]) [25] [26
+] [22]) (./Backmatter/ref.tex [23
 
-] (./Backmatter/Achieve.tex [27
 
-] [28]) [29] [30
+] [24] [25] [26]) [27] [28
+
+] (./Backmatter/Achieve.tex [29
+
+] [30]) [31] [32
 
 ]
 Package minitoc Info: I0009
@@ -737,14 +742,14 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the main.log file.
 
-[31] (./main.aux) ) 
+[33] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7403 strings out of 493640
- 98126 string characters out of 6150527
+ 7407 strings out of 493640
+ 98201 string characters out of 6150527
  203207 words of memory out of 5000000
- 10561 multiletter control sequences out of 15000+600000
+ 10564 multiletter control sequences out of 15000+600000
  48417 words of font info for 123 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  44i,9n,45p,413b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (41 pages, 65092 bytes).
+Output written on main.dvi (43 pages, 71540 bytes).

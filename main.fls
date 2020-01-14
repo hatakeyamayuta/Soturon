@@ -525,6 +525,8 @@ INPUT ./chap2/fig/3DBox.eps
 INPUT ./chap2/fig/3DBox.eps
 INPUT ./chap2/fig/ray.eps
 INPUT ./chap2/fig/ray.eps
+INPUT ./chap2/fig/kitti.eps
+INPUT ./chap2/fig/kitti.eps
 INPUT ./chap2/fig/training.eps
 INPUT ./chap2/fig/training.eps
 INPUT ./Backmatter/Thank.tex
