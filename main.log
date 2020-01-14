@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  14 JAN 2020 10:04
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017/Debian) (preloaded format=platex 2019.11.29)  14 JAN 2020 19:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -695,7 +695,15 @@ File: ./chap1/fig/struct.eps Graphic file (type eps)
 
 \openout3 = `main.mtc'.
 
-(./main.mtc2) [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]) (./Backmatter/Thank.tex [19
+(./main.mtc2) [9] [10] [11] [12]
+File: ./chap2/fig/3DBox.eps Graphic file (type eps)
+<./chap2/fig/3DBox.eps>
+File: ./chap2/fig/ray.eps Graphic file (type eps)
+<./chap2/fig/ray.eps>
+ [13]
+File: ./chap2/fig/training.eps Graphic file (type eps)
+<./chap2/fig/training.eps>
+ [14] [15] [16] [17] [18]) (./Backmatter/Thank.tex [19
 
 
 ] [20]) (./Backmatter/ref.tex [21
@@ -731,12 +739,12 @@ Package minitoc(hints) Warning: W0024
 
 [31] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 7390 strings out of 493640
- 97889 string characters out of 6150527
+ 7403 strings out of 493640
+ 98126 string characters out of 6150527
  203207 words of memory out of 5000000
- 10552 multiletter control sequences out of 15000+600000
+ 10561 multiletter control sequences out of 15000+600000
  48417 words of font info for 123 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  44i,9n,45p,413b,422s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (41 pages, 59428 bytes).
+Output written on main.dvi (41 pages, 65092 bytes).

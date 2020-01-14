@@ -41,20 +41,67 @@
 \newpage
 \section{画像による3次元物体検出}
 \subsection{深層学習による3次元物体検出}
-本項では深層学習による3次元物体検出について述べる．本研究では単一の画像から求めたCNN特徴量から対象物の3次元座標と姿勢，
-画像内の領域を推定できる3D Bounding Box Estimation Using Deep Learningand Geometry\cite{2017}を用いる．
+本項では深層学習による3次元物体検出について述べる．本研究では単一の画像から求めたCNN特徴量から対象物の3次元座標とカメラから見た姿勢$\theta$，
+画像内の領域を推定する3D Bounding Box Estimation Using Deep Learningand Geometry\cite{2017}を用いる．
+この手法においては，図\ref{fig:pose}に示すように入力画像から画像内の領域を推定後，対象物体のローカル座標系の回転 $\theta_l$と距離の推定を行うことで対象物体の位置姿勢を求める．
 
+以下の式でカメラの内部パラメータ$R$により対象物体の距離から画像座標$(u, v)$に変換を行い，
+\begin{equation}
+\begin{bmatrix}u  \\v \\1 \end{bmatrix}
+=\begin{bmatrix}f_x & 0 & c_x\\0 & f_y & c_y\\0 &0 &1 \end{bmatrix}
+\begin{bmatrix}\frac{x}{z}  \\\frac{y}{z} \\1 \end{bmatrix}
+\end{equation}
+
+
+図\ref{fig:ray}に示すように，対象物体の画像座標$(u, v)$とカメラの画像中心$(c_x, c_y)$のなす角$\theta_{ray}$を求め以下の式で対象物体の姿勢を算出する．
+
+
+\begin{equation}
+    \theta =
+     \theta_l-\theta_{ray}
+ \end{equation}
+
+
+\begin{figure}[b]
+    \begin{center}
+    \includegraphics[width=0.5\columnwidth]{./chap2/fig/3DBox.eps}
+    \caption{姿勢の導出方法}
+    \label{fig:pose}
+    \end{center}
+    %\vspace{-5mm}
+\end{figure}
+
+\begin{figure}[b]
+    \begin{center}
+    \includegraphics[width=0.8\columnwidth]{./chap2/fig/ray.eps}
+    \caption{物体中心と画像中心のなす角の導出}
+    \label{fig:ray}
+    \end{center}
+    %\vspace{-5mm}
+\end{figure}
 \newpage
 
 \subsection{データセットの作成}
 本項では深層学習による3次元物体検出によりダンプトラックを認識するために必要な学習用データセットの作成方法について述べる．
 2.3.1 節で述べたように，深層学習による3次元物体検出は一般車両の自動運転を目的としたものであるため，ダンプトラックのような建設機械は
 データ数が少ないため認識精度は低い．そのため本研究では，認識精度向上させるためにダンプトラックの模型を用いた学習用のデータセット作成を行う．
-データセットを作成するためにはダンプトラックの画像，位置姿勢，寸法と対象物体の画像座標が必要となる．そのため，図に示すように，
-回転台の上にダンプトラックを設置することで回転台から姿勢を計測し，RGB-Dカメラにより画像と位置を獲得する．その後，撮影した画像からダンプトラックの画像座標を
+データセットを作成するためにはダンプトラックの画像，中心位置$(C_x, C_y, C_z)$，ローカル座標系の姿勢$\theta_l$，寸法と対象物体の画像座標が必要となる．そのため，図\ref{fig:train}に示すように，撮影環境を構築する．
+回転台の上にダンプトラックを設置することで回転台から$\theta_c$を計測し，RGB-Dカメラにより画像と位置を獲得する．その後，撮影した画像からダンプトラックの画像座標を
 ラベル付することでデータセットの作成を行う．
-また，データセットを拡張するために背景をクロマキー合成する．
+また，データセットを拡張するために背景をクロマキー合成を行い，KITTIデータセットで学習済みのモデルに作成したデータセットを再学習することで
+学習を行う．
 
+
+%%%%%
+\begin{figure}[b]
+    \begin{center}
+    \includegraphics[width=0.8\columnwidth]{./chap2/fig/training.eps}
+    \caption{撮影環境}
+    \label{fig:train}
+    \end{center}
+    %\vspace{-5mm}
+\end{figure}
+%%%%
 \newpage
 
 \section{点群位置合わせによる位置姿勢推定}
@@ -65,14 +112,16 @@
 
 \subsection{点群位置合わせ}
 本項では点群位置合わせによるダンプトラックの位置姿勢の推定手法ついて述べる．
-点群位置合わせにはICP（Iterative ClosestPoint）を用いる．
+本研究ではICP（Iterative ClosestPoint）により点群位置合わせを行う．
+ICPにおいては，図に示すように，基準点群と計測点群の近傍点を対応点として扱い，対応点間のユーグリッド距離を
+最小2乗法により最小化を繰り返し，高精度な位置合わせをすることで回転と移動量を導出し位置姿勢推定を行う．
 
 
 \newpage
 
 \subsection{3次元特徴量マッチング}
 本項では点群位置合わせの初期値となる3次元特徴量マッチングについて述べる．
-
+本研究では，Fast PointFeature Histogramにより対応点の検出を行う．
 \newpage
 
 \section{おわりに}

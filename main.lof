@@ -6,3 +6,6 @@
 \contentsline {figure}{\numberline {1.4}{\ignorespaces 本論文の構成\relax }}{7}
 \addvspace {10\jsc@mpt }
 \contentsline {xchapter}{提案手法}{9}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces 姿勢の導出方法\relax }}{13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces 物体中心と画像中心のなす角の導出\relax }}{14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces 撮影環境\relax }}{15}
