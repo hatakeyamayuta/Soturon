@@ -10,5 +10,10 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces 物体中心と画像中心のなす角の導出\relax }}{14}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces KITTIデータセット\relax }}{15}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces 撮影環境\relax }}{16}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces ICP アルゴリズム\relax }}{18}
 \addvspace {10\jsc@mpt }
 \contentsline {xchapter}{検証実験}{21}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 撮影環境\relax }}{23}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces ComXim ターンテーブル\relax }}{23}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces プラッツ 1/50日野プロフィア\relax }}{23}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces IntelのRealSense D435i\relax }}{24}

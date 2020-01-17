@@ -530,6 +530,8 @@ INPUT ./chap2/fig/kitti.eps
 INPUT ./chap2/fig/kitti.eps
 INPUT ./chap2/fig/training.eps
 INPUT ./chap2/fig/training.eps
+INPUT ./chap2/fig/ICP.eps
+INPUT ./chap2/fig/ICP.eps
 INPUT ./chap3/chap3.tex
 INPUT ./chap3/chap3.tex
 INPUT main.mtc3
@@ -540,6 +542,14 @@ INPUT main.mtc
 OUTPUT main.mtc
 INPUT main.mtc3
 INPUT main.mtc3
+INPUT ./chap3/fig/train.eps
+INPUT ./chap3/fig/train.eps
+INPUT ./chap3/fig/table.eps
+INPUT ./chap3/fig/table.eps
+INPUT ./chap3/fig/truck.eps
+INPUT ./chap3/fig/truck.eps
+INPUT ./chap3/fig/intel.eps
+INPUT ./chap3/fig/intel.eps
 INPUT ./Backmatter/Thank.tex
 INPUT ./Backmatter/Thank.tex
 INPUT ./Backmatter/ref.tex

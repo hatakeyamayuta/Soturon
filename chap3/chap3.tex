@@ -21,21 +21,56 @@
 
 \section{模型による3次元物体検出の実験}
 \subsection{実験環境}
-本節では，模型による3次元物体検出の実験に使用した装置，実験方法について述べる．図に示すように，装置には，回転台，ダンプトラックの模型とRGB-Dを使用した．
-回転台は，ComXimの360度写真撮影用ターンテーブル（），ダンプトラックの模型は，プラッツの1/50日野プロフィア（），RGB-Dセンサは，IntelのRealSense D435i を使用した．表\ref{tab:table}，
+本節では，模型による3次元物体検出の実験に使用したデータセットの作成環境と実験方法について述べる．図\ref{fig:tr}に示すように，データセットの作成には，回転台，ダンプトラックの模型とRGB-Dを使用した．
+回転台は，ComXimのターンテーブル（\ref{fig:table}），ダンプトラックの模型（\ref{fig:truck}）は，プラッツの1/50日野プロフィア（\ref{tab:truck}），RGB-Dセンサは，IntelのRealSense D435i（\ref{tab:intel}） を使用した．表\ref{tab:table}，
 表\ref{tab:truck}，表\ref{tab:intel}
-にそれぞれ，回転台，模型とRGB-Dセンサの仕様を示す．RGB-Dセンサは，内蔵したIMUにより取得した姿勢を基に地面に並行となるように座標変換を行う．
+にそれぞれ，回転台，模型とRGB-Dセンサの仕様を示す．RGB-Dセンサは，内蔵したIMUにより取得した姿勢を基に地面に並行となるようにセンサ座標を座標変換する．
+\begin{figure}[b]
+    \begin{center}
+    \includegraphics[width=0.5\columnwidth]{./chap3/fig/train.eps}
+    \caption{撮影環境}
+    \label{fig:tr}
+    \end{center}
+    %\vspace{-5mm}
+\end{figure}
 
+\begin{figure}[b]
+    \begin{minipage}{0.5\hsize}
+     \begin{center}
+      \includegraphics[width=45mm]{./chap3/fig/table.eps}
+     \end{center}
+     \caption{ComXim ターンテーブル}
+     \label{fig:table}
+    \end{minipage}
+    \begin{minipage}{0.5\hsize}
 
+    \begin{center}
+     \includegraphics[width=45mm]{./chap3/fig/truck.eps}
+    \end{center}
+     \caption{プラッツ 1/50日野プロフィア}
+     \label{fig:truck}
+    \end{minipage}
+    
+\end{figure}
+\clearpage
+
+\begin{figure}[b]
+    \begin{center}
+    \includegraphics[width=0.4\columnwidth]{./chap3/fig/intel.eps}
+    \caption{IntelのRealSense D435i}
+    \label{fig:intel}
+    \end{center}
+    %\vspace{-5mm}
+\end{figure}
 
 \begin{table}[b]
     \begin{center}
-    \caption{ComXim 360度写真撮影用ターンテーブル}
+    \caption{ComXim ターンテーブル}
     \begin{tabular}{|c|c|}
     \hline
     最大耐荷重     & 20 kg   \\ \hline
     角度分解能     & 0.1 deg \\ \hline
-    外形寸法（R×H） & 20×5 cm \\ \hline
+    外形寸法（R x H） & 20 x 5 cm \\ \hline
     質量        & 0.8 kg  \\ \hline
        \end{tabular}
     \label{tab:table}
@@ -47,7 +82,7 @@
     \caption{プラッツ 1/50日野プロフィア}
     \begin{tabular}{|c|c|}
     \hline
-    外形寸法（L×W×H） & 160×60×71 mm \\ \hline
+    外形寸法（L x W x H） & 160 x 60 x 71 mm \\ \hline
     質量          & 281 g        \\ \hline
     \end{tabular}
     \label{tab:truck}
@@ -68,6 +103,9 @@ IMU       & BMI055                   \\ \hline
     \label{tab:intel}
     \end{center}
 \end{table}
+
+\clearpage
+
 \subsection{検証結果}
 \section{実機による実験}
 \subsection{実験環境}
